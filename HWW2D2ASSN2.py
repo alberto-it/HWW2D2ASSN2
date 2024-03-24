@@ -1,6 +1,7 @@
-# 1. Nested Decisions: The Adventure Game 🏰
-# Task 1: Code Correction
-
+"""
+1. Nested Decisions: The Adventure Game 🏰
+Task 1: Code Correction
+"""
 place = input("Choose a place: forest or cave? ")
 
 if place == "forest":
@@ -12,14 +13,13 @@ if place == "forest":
 elif place == "cave":
     print("You find a hidden treasure!")
 
-# Task 2: Setting the Scene
-
 print()
 
-# Based on the corrected code from Task 1, expand the game. If the user chooses "cave", 
-# ask them if they want to "light a torch" or "proceed in the dark", 
-# and provide outcomes for each decision.
-    
+"""
+Task 2: Setting the Scene
+Based on the corrected code from Task 1, expand the game. If the user chooses "cave", 
+ask them if they want to "light a torch" or "proceed in the dark", and provide outcomes for each decision.
+"""
 place = input("Choose a place: forest or cave? ")
 
 if place == "forest":
@@ -35,13 +35,12 @@ elif place == "cave":
     elif action == "proceed in the dark":
         print("Yikes! Be careful!")
 
-# Task 3: Default Path
-
 print()
-
-# If the user makes an invalid choice at any point, use the pass statement for now. 
-# Later, you can enhance this to provide feedback or a different branch of the story.
-
+"""
+Task 3: Default Path
+If the user makes an invalid choice at any point, use the pass statement for now. 
+Later, you can enhance this to provide feedback or a different branch of the story.
+"""
 place = input("Choose a place: forest or cave? ")
 
 if place == "forest":
@@ -60,31 +59,31 @@ elif place == "cave":
     else: pass
 else: pass
 
-# 2. Quick Decisions: The Event Planner 🎉
-
 print()
-
-# Task 1: Code Correction
-
+"""
+2. Quick Decisions: The Event Planner 🎉
+Task 1: Code Correction
+"""
 attendees = int(input("Enter number of attendees: "))
 venue = "large hall" if attendees > 100 else "conference room"
 print(venue, "\n")
 
-# Task 2: Venue Selection
-
-# Based on the corrected code from Task 1, further enhance the program to recommend 
-# additional facilities like "audio system" or "projector" based on the number of attendees.
-
+"""
+Task 2: Venue Selection
+Based on the corrected code from Task 1, further enhance the program to recommend 
+additional facilities like "audio system" or "projector" based on the number of attendees.
+"""
 attendees = int(input("Enter number of attendees: "))
 venue = "large hall" if attendees > 100 else "conference room"
 print(venue)
 if venue == "large hall":
     print("Additional facilities like audio system or projector is recommeded")
 
-# Task 3: Catering Choices
-# Ask the user if they want "vegetarian" food.
-# Recommend "Veggie Delight Caterers" if yes, otherwise recommend "Gourmet Meals Caterers".
-
+"""
+Task 3: Catering Choices
+Ask the user if they want "vegetarian" food.
+Recommend "Veggie Delight Caterers" if yes, otherwise recommend "Gourmet Meals Caterers".
+"""
 veg = (input("\nWould you like vegetarian food? (yes or no): "))
 recommend = "Veggie Delight Caterers" if veg == 'yes' else "Gourmet Meals Caterers"
 print("\nWe recommend",recommend,"\n")
