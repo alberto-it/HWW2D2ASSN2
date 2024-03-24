@@ -14,7 +14,6 @@ elif place == "cave":
     print("You find a hidden treasure!")
 
 print()
-
 """
 Task 2: Setting the Scene
 Based on the corrected code from Task 1, expand the game. If the user chooses "cave", 
@@ -74,16 +73,19 @@ Based on the corrected code from Task 1, further enhance the program to recommen
 additional facilities like "audio system" or "projector" based on the number of attendees.
 """
 attendees = int(input("Enter number of attendees: "))
-venue = "large hall" if attendees > 100 else "conference room"
-print(venue)
-if venue == "large hall":
-    print("Additional facilities like audio system or projector is recommeded")
+if attendees > 100:
+    venue = "large hall"
+    facility = "an audio system"
+else:
+    venue = "conference room"
+    facility = "a projector"
+print("We recommend using", facility, "in the", venue + ".\n")
 
 """
 Task 3: Catering Choices
 Ask the user if they want "vegetarian" food.
 Recommend "Veggie Delight Caterers" if yes, otherwise recommend "Gourmet Meals Caterers".
 """
-veg = (input("\nWould you like vegetarian food? (yes or no): "))
+veg = (input("Would you like vegetarian food? (yes or no): "))
 recommend = "Veggie Delight Caterers" if veg == 'yes' else "Gourmet Meals Caterers"
-print("\nWe recommend",recommend,"\n")
+print("We recommend",recommend,"\n")
